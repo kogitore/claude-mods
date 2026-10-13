@@ -6,18 +6,21 @@ Make your claude code look and feel better. Easier to read so you miss fewer thi
 | --- | --- |
 | `glamour-dark` | Draws the model's text replies with [glamour](https://github.com/charmbracelet/glamour)'s default dark style |
 | `tool-lines` | Draws each tool call as one compact `tool_call: Tool(input) - meta` line and hides its result block |
+| `tool-dots` | Collapses each run of consecutive tool calls (no reply text in between) into one line, `●●●●● tool_call: Bash ×3 · Read ×2`: one dot per call, colored by state, and no arguments or paths |
+
+> This is a fork of [Tickloop/claude-mods](https://github.com/Tickloop/claude-mods) that adds `tool-dots`. `tool-dots` and `tool-lines` both draw tool rows, so enable only one of them.
 
 ## Installation
 
 Add this repo as a plugin marketplace, then install the mods you want:
 
 ```sh
-claude plugin marketplace add Tickloop/claude-mods
+claude plugin marketplace add kogitore/claude-mods
 claude plugin install glamour-dark@claude-mods
-claude plugin install tool-lines@claude-mods
+claude plugin install tool-dots@claude-mods
 ```
 
-Or do the same from inside a session with `/plugin marketplace add Tickloop/claude-mods`, then pick the mods from `/plugin`. Run `/reload-plugins` to apply them without restarting.
+Or do the same from inside a session with `/plugin marketplace add kogitore/claude-mods`, then pick the mods from `/plugin`. Run `/reload-plugins` to apply them without restarting.
 
 To pick up a new release (a mod's `version` in its `plugin.json` changed):
 

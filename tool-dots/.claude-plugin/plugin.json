@@ -1,0 +1,7 @@
+{
+  "name": "tool-dots",
+  "version": "0.1.0",
+  "description": "Collapses each run of consecutive tool calls into one 'dots tool_call: Tool ×n' transcript line with no arguments",
+  "types": "./types/index.d.ts",
+  "author": { "name": "kogitore" }
+}

@@ -1,0 +1,4 @@
+{
+  "description": "The tool-dots hooks module",
+  "modules": ["./register.ts"]
+}

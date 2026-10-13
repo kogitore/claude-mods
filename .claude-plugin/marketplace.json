@@ -12,6 +12,11 @@
       "name": "tool-lines",
       "source": "./tool-lines",
       "description": "Draws each tool call as one compact 'tool_call: Tool(input) - meta' line and hides its result block"
+    },
+    {
+      "name": "tool-dots",
+      "source": "./tool-dots",
+      "description": "Collapses each run of consecutive tool calls into one 'dots tool_call: Tool ×n' line with no arguments"
     }
   ]
 }
