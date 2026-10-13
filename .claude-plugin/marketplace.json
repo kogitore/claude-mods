@@ -1,7 +1,7 @@
 {
   "name": "claude-mods",
   "description": "Make Claude Code look and feel better",
-  "owner": { "name": "Tickloop" },
+  "owner": { "name": "kogitore" },
   "plugins": [
     {
       "name": "glamour-dark",
